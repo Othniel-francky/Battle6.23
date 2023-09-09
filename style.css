@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  font-family: poppins, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 100px;
+  transition: 0.5s;
+  /* background: var(--main-color); */
+}
+.part {
+  display: flex;
+  gap: 50px;
+}
+.part {
+  color: white;
+}
+.logo {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+.logo img {
+  height: 50px;
+  width: 50px;
+}
+
+.navbar {
+  display: flex;
+  column-gap: 5rem;
+}
+
+.navbar li {
+  position: relative;
+}
+.navbar a {
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+}
+
+.navbar a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #e4d2c0;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  transition: 0.4s all linear;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+.navbar .Acceuil-active::after {
+  width: 100%;
+}
+#menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1000001;
+  display: none;
+}
+.btn{
+    padding: 0.7rem 1.4rem;
+    background: #e4d2c0;
+    color: black;
+    font-weight: 400;
+    border-radius: 0.5rem;
+
+}
+.btn:hover{
+    background: #e4d2c0;
+}
+
+.contaniner {
+  width: 100%;
+  min-height: 990px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: rgb(2, 3, 7, 0.4);
+}
+
+.contaniner img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+}
+.home-text {
+  z-index: 1000;
+  padding: 0 450px;
+
+}
+
+.home-text p{
+    color: aliceblue;
+}
+
+.home-text h1 {
+  color: #e4d2c0;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.button{
+    margin-top: 50px;
+    justify-content: flex-end;
+    display: flex;
+}
+span{
+
+    color: #e4d2c0;
+    font-size: 29px;
+    font-weight: 900;
+}
+
+.contain{
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+.photo img{
+    height: 800px;
+    width: 500px;
+}
